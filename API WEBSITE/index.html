@@ -1,0 +1,40 @@
+<!--Author @ Bryn Jones 2024-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content="Victoria and Albert Muesum API Submission">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js"></script>
+    <title>Rest API</title>
+</head>
+<body>
+    <div id="wrapper"><!--Opens Wrapper-->
+        <h1 id="header">V&A Muesum API Submission</h1>
+        <form id="form"><!--Opens form-->
+            <label for="search">Search</label>
+            <span id="hint_search" class="hint"> - Please enter a search term.</span>
+            <input id="search" type="text">
+            <input id="submit" type="submit" value="Search">
+        </form><!--Closes form-->
+        <div id="results"><!--Opens Results-->
+        </div><!--Closes Results-->
+        <div id="emptyResults">
+            <p id="noMatches"></p>
+        </div>
+        <div id="loading">
+            <img src="images/loading.gif" alt="loading gif">
+        </div>
+        <!--Need to change error and add css-->
+        <div id="errorMessage">
+            <h2>Oops - something went wrong</h2>
+            <p>Error 400</p>
+        </div>
+    </div> <!--Closes Wrapper-->
+    <footer>
+        <p>Images provibed by Victoria and Albert Muesum</p>
+    </footer>
+</body><!--closes body-->
+</html>
